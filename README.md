@@ -85,7 +85,7 @@ Detay sayfasından istenilen film için istenilen işlemi yapabiliriz. İstersek
 </table>
 </div>
 
-Sepete eklenilen filmi istersek kaldırabiliriz. Filmi sepetten kaldığımız zaman film detay ekranındaki sepete ekle kısmı geri gelir. Silinen film istenildiği zamanda tekrar sepete eklenebilir.
+Sepete eklenilen filmi istersek kaldırabiliriz. Filmi sepetten kaldırdığımız zaman film detay ekranındaki sepete ekle kısmı geri gelir. Silinen film istenildiği zamanda tekrar sepete eklenebilir.
 
 <div align="center">
 <table>
