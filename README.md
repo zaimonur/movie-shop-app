@@ -11,7 +11,7 @@ SwiftUI ile geliştirilen, filmleri listeleyip detayına gidebildiğiniz; favori
 - ✅ Sepetteki Filmleri Görüntüleme
 - ✅ REST API Entegrasyonu (async/await, URLSession)
 - ✅ Karanlık / Açık Mod Uyumu
-Not: Akışlar demo amaçlıdır; ödeme vb. gerçek işlemler içermez.
+  - Not: Akışlar demo amaçlıdır; ödeme vb. gerçek işlemler içermez.
 ---
 
 ## 🧩 Ana Ekranlar
