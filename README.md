@@ -1,22 +1,22 @@
-# 📱 Techcareer SwiftUI for iOS Bootcamp — Bitirme Projesi
-### SwiftUI kullanılarak yapılmıştır. Veriler API ile çekilmiştir.
+# 📱 techcareer.net SwiftUI for iOS Bootcamp — Bitirme Projesi
+SwiftUI ile geliştirilen, filmleri listeleyip detayına gidebildiğiniz; favori ve sepet akışlarını barındıran eğitim amaçlı demo uygulama. Ticari amaçla kullanılmamıştır.
 
 ---
 
 ## 🎯 Özellikler
 - ✅ Filmleri Listeleme
 - ✅ Film Detayı Görme
-- ✅ Seçilen Filmi Sepete Ekleme
+- ✅ Favorilere Ekleme / Çıkarma
+- ✅ Sepete Ekleme / Çıkarma
 - ✅ Sepetteki Filmleri Görüntüleme
-- ✅ Sepetten Film Silme
-- ✅ API Bağlantıları
-- ✅ Karanlık/açık mod uyumu
-
+- ✅ REST API Entegrasyonu (async/await, URLSession)
+- ✅ Karanlık / Açık Mod Uyumu
+Not: Akışlar demo amaçlıdır; ödeme vb. gerçek işlemler içermez.
 ---
 
 ## 🧩 Ana Ekranlar
 
-### 🏠 Ana Sayfa & 🔍 Arama & ❤️ Favoriler & 🛒 Arama
+### 🏠 Ana Sayfa & 🔍 Arama & ❤️ Favoriler & 🛒 Sepet
 
 <div align="center">
 <table>
@@ -60,8 +60,8 @@ Filmleri keşfet ekranından arayıp istediğimiz filmin detay sayfasına gidebi
     </td>
   </tr>
   <tr>
-    <td align="center"><b>Favorilere Ekleme</b></td>
-    <td align="center"><b>Sepete Ekleme</b></td>
+    <td align="center"><b>Film Arama</b></td>
+    <td align="center"><b>Film Detay Sayfası</b></td>
   </tr>
 </table>
 </div>
@@ -85,4 +85,78 @@ Detay sayfasından istenilen film için istenilen işlemi yapabiliriz. İstersek
 </table>
 </div>
 
-Sepete eklenilen filmi istersek kaldırabiliriz. 
+Sepete eklenilen filmi istersek kaldırabiliriz. Filmi sepetten kaldığımız zaman film detay ekranındaki sepete ekle kısmı geri gelir. Silinen film istenildiği zamanda tekrar sepete eklenebilir.
+
+<div align="center">
+<table>
+  <tr>
+    <td>
+      <img width="300" alt="SepetFilm" src="https://github.com/user-attachments/assets/c6cf93ef-9643-4b63-a9dd-25cae3332129" />
+    </td>
+    <td>
+      <img width="300" alt="SepetFilmSilme" src="https://github.com/user-attachments/assets/8f0e9f68-b287-49c2-a278-c3f9ad80d1e6" />
+    </td>
+    <td>
+      <img width="300" alt="SepetBoş" src="https://github.com/user-attachments/assets/4f269d5a-13b0-4307-80a2-1a0bf74e5248" />
+    </td>
+    <td>
+      <img width="300" alt="FilmDetay2" src="https://github.com/user-attachments/assets/bec72e41-e0b5-4d5f-aa53-6b0f97997e16" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Sepette Film</b></td>
+    <td align="center"><b>Sepetteki Filmi Silme</b></td>
+    <td align="center"><b>Sepet Boş</b></td>
+    <td align="center"><b>Detay Sayfasına Yeniden Bakış</b></td>
+  </tr>
+</table>
+</div>
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+- **Dil & Platform**
+  - Swift
+  - iOS
+
+- **UI Katmanı**
+  - **SwiftUI**
+    - `NavigationStack`, `.toolbar`, `.searchable`, `.refreshable`
+    - Responsive layout
+  - **Design System**
+    - `AppColors` (özel renk paleti)
+    - `NavigationBarStyle` (başlık / görünüm özelleştirmeleri)
+    - Kart bileşenleri: `CardCarouselView`, liste/grid kartları
+
+- **Mimari**
+  - **MVVM**
+    - View / ViewModel / Model ayrımı
+    - Protokol tabanlı soyutlama (test edilebilirlik için)
+
+- **DATA Katmanı**
+  - SwiftData
+  - REST API
+
+- **Networking & Concurrency**
+  - `URLSession` ile REST API tüketimi (async/await)
+  - JSON decode için `Codable`
+  - Hata ve durum yönetimi (loading / error state)
+
+- **Görseller**
+  - **Kingfisher**
+    - Uzaktan görsel indirme, caching, place­holder’lar
+
+---
+
+## 🚀 Kurulum (Quick Start)
+```bash
+git clone https://github.com/zaimonur/techcareer-swiftui-odev2.git
+cd techcareer-swiftui-odev2
+open ToDosAppOdev.xcodeproj
+```
+---
+
+## 👨🏻‍💻 Bana Ulaşın
+- ✉️ **zaimonur08@gmail.com**
+- 🌐 **https://www.linkedin.com/in/onur-zaim/**
